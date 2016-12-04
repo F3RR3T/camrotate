@@ -1,1 +1,10 @@
-/etc/systemd/system/camrotate.path
+# SJP  26 September, 2016
+[Unit]
+Description=Monitor webcam landing directory
+
+[Path]
+PathModified=/home/st33v/farm/cam/neatherd/
+
+[Install]
+WantedBy=multi-user.target
+

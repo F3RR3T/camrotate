@@ -1,1 +1,9 @@
-/etc/systemd/system/camrotate.service
+# SJP 26 September 2016
+
+[Unit]
+Description=Rename webcam images and copy to web folder
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/camrotate.sh
+
