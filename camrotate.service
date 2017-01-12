@@ -5,5 +5,5 @@ Description=Rename webcam images and copy to web folder
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/camrotate.sh
+ExecStart=/usr/local/bin/camfreshen.sh
 

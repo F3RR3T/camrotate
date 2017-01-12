@@ -3,7 +3,7 @@
 Description=Monitor webcam landing directory
 
 [Path]
-PathModified=/home/st33v/farm/cam/neatherd/
+PathModified=/home/st33v/farm/cam/
 
 [Install]
 WantedBy=multi-user.target
