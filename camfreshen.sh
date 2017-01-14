@@ -17,12 +17,12 @@ do
     thiscamdir=$pixdir/$cam
     cd $webpixrootdir/$cam
 
-    echo looking in $thiscamdir
-    echo pwd is $PWD "$webpixrootdir"/"$cam"
+    #echo looking in $thiscamdir
+    #echo pwd is $PWD "$webpixrootdir"/"$cam"
 
     # find the most recent photo
     latest=$(ls $thiscamdir/*.jpg -t 2>/dev/null | head -1)
-    echo latest is $latest 
+    #echo latest is $latest 
     cp $latest latest.jpg  # copy changes owner to st33v
     chmod 644 latest.jpg
 
@@ -30,14 +30,13 @@ do
     a=$(md5sum latest.jpg | awk '{print $1}')
     if (test -e 1.jpg) then
         b=$(md5sum 1.jpg | awk '{print $1}')
-        echo found 1.jpg
-    else b=zzz
+     #   echo found 1.jpg
+    else b=zzz  # only happens if there is no file "1.jpg"
     fi
     if ( $a == $b ) then
-        echo nothing new here
+      #  echo nothing new here
         continue
     fi
-
 
     # move all existing pix along (let's have maxpix on display)
     i=$maxpix
