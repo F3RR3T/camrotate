@@ -33,7 +33,7 @@ do
      #   echo found 1.jpg
     else b=zzz  # only happens if there is no file "1.jpg"
     fi
-    if ( $a == $b ) then
+    if [ $a == $b ]; then
       #  echo nothing new here
         continue
     fi
