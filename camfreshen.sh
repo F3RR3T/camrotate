@@ -35,6 +35,7 @@ do
     fi
     if [ $a == $b ]; then
       #  echo nothing new here
+        rm latest.jpg
         continue
     fi
 
