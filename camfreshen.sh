@@ -9,6 +9,7 @@
 pixdir=/home/st33v/farm/cam
 webpixrootdir=/data/pix
 maxpix=24
+. /usr/local/bin/timestamp.sh
 
 declare -a camz=(neatherd lucerne)
 
@@ -25,6 +26,7 @@ do
     #echo latest is $latest 
     cp $latest latest.jpg  # copy changes owner to st33v
     chmod 644 latest.jpg
+    timestamp latest.jpg
 
     # Is it a new photo?
     a=$(md5sum latest.jpg | awk '{print $1}')
