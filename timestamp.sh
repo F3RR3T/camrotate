@@ -6,7 +6,7 @@
 function timestamp {
 	# Grab the timestamp
 	timestamp=" $(identify -format '%[exif:datetime]' ${1})"
-	# echo timestamp = [${timestamp}]
+    echo ${1}: timestamp = [${timestamp}]
 
 	# Add the text to the image
 	# stolen from:
