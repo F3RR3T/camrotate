@@ -1,0 +1,10 @@
+# SJP  26 September, 2016
+[Unit]
+Description=Monitor webcam timelapse videos arriving from stan
+
+[Path]
+PathModified=/home/st33v/farm/cam/mov/
+
+[Install]
+WantedBy=multi-user.target
+

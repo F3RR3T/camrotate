@@ -1,0 +1,10 @@
+# SJP 26 September 2016
+
+[Unit]
+Description=Rename timelapse movies and move to web folder
+
+[Service]
+StartLimitBurst=1
+Type=oneshot
+ExecStart=-/usr/local/bin/movemovie.sh
+
